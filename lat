@@ -3,10 +3,14 @@
     <body>
        <table>
         <thead>
-<td>judul</td>
+            <tr>
+                <td>judul</td>
+            </tr>
         </thead>
         <tbody>
-<td>isi</td>
+            <tr>
+                <td>isi</td>
+            </tr>
         </tbody>
         <tr>Judul</tr>
         <tr><Isi</tr>
