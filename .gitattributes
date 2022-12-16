@@ -1,2 +1,19 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+html>
+    <head></head>
+    <body>
+       <table>
+        <thead>
+            <tr>
+                <td>judul</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>isi</td>
+            </tr>
+        </tbody>
+        <tr>Judul</tr>
+        <tr><Isi</tr>
+       </table>
+    </body>
+</html>
