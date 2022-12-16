@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+       <table>
+        <thead>
+<td>judul</td>
+        </thead>
+        <tbody>
+<td>isi</td>
+        </tbody>
+        <tr>Judul</tr>
+        <tr><Isi</tr>
+       </table>
+    </body>
+</html>
