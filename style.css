@@ -1,0 +1,25 @@
+body {
+    background-color: turquoise;
+}
+
+.container-navbar {
+    background-color: yellowgreen;
+}
+
+.container-content {
+    background-color:red;
+}
+
+.container-footer {
+    background-color: pink;
+}
+
+.ul-navbar {
+    background-color: white;
+    width: 150px;
+}
+
+.li-navbar {
+ border-radius:1px solid bisque;
+ list-style-type: square;
+}
