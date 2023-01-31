@@ -1,11 +1,5 @@
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format('woff2');
-    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-  }
+@import url(https://fonts.googlapis.com/css2?
+);
 *
 {
     margin: 0;
@@ -103,6 +97,7 @@ body
     color: #23242a;
     font-size: 1em;
     letter-spacing: 0,05em;
+    z-index: 10;
 }
 .inputBox span
 {
@@ -112,5 +107,41 @@ body
     font-size: 1em;
     color: #8f8f8f;
     pointer-events: none;
-    letter-spacing: ;
+    letter-spacing: 0,05em;
+    transition: 0,5s;
+}
+.inputBox span:valid ~ span,
+.inputBox span:focus ~ span
+{
+    color: #45f3ff;
+    transform:translateX(0px) translateY(-34px);
+    font-size: 0,75em;
+}
+.inputBox i 
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0,5s;
+    pointer-events: none;
+}
+.inputBox span:valid ~ i,
+.inputBox span:focus ~ i
+{
+    height: 44px;
+}
+.Links
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Links a
+{
+    margin: 10px 0;
+    font-size: 0,75em;
+    color: ;
 }
