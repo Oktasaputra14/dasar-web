@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplikasi Penghitungan Gaji Karyawan Toko</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Penghitungan Gaji Karyawan Toko</h1>
+        <label for="jamKerja">Jam Kerja:</label>
+        <input type="number" id="jamKerja" placeholder="Masukkan jumlah jam kerja" required>
+        
+        <label for="tarifPerJam">Tarif per Jam:</label>
+        <input type="number" id="tarifPerJam" placeholder="Masukkan tarif per jam" required>
+        
+        <button onclick="hitungGaji()">Hitung Gaji</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function hitungGaji() {
+            const jamKerja = parseFloat(document.getElementById('jamKerja').value);
+            const tarifPerJam = parseFloat(document.getElementById('tarifPerJam').value);
+
+            if (!isNaN(jamKerja) && !isNaN(tarifPerJam)) {
+                const gaji = jamKerja * tarifPerJam;
+                document.getElementById('result').innerHTML = `Gaji Karyawan: Rp ${gaji}`;
+            } else {
+                document.getElementById('result').innerHTML = 'Masukkan angka yang valid.';
+            }
+        }
+    </script>
+</body>
+</html>
