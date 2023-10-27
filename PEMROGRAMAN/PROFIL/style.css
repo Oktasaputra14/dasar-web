@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    height: 100%;
+    background: #0089A4;
+}
+.container{
+    position: absolute;
+    left: calc((100% - 900px)/2);
+    top: calc((100% - 600px)/2);
+    width: 900px;
+    height: 600px;
+    border-top: 3px solid #FF0000;
+    box-shadow: 3px 3px 1px 1px #000000A5;
+}
+.left{
+    float: left;
+    width: 45%;
+    height: 100%;
+    background-image: url('gumul.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.filter{
+    width: 100%;
+    height: 100%;
+    background-color: #00000080; 
+}
+.profile{
+    width: 180px;
+    height: 180px;
+    background-image:url('profile.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    position: relative;
+    left: calc((100% - 180px)/2);
+    top: calc((100% - 130px)/6);
+}
+.desc{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    width: 350px;
+    left: calc((100% - 350px)/2);
+    top: calc((100% - 300px)/2)
+}
+.sub-desc{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    width: 350px;
+    left: calc((100% - 350px)/2);
+    top: calc((100% - 250px)/2);
+}
+.sub-desc a{
+    position: relative;
+    text-decoration: none;
+    color: #FFF;
+    left: 5px;
+    top: 5px;
+}
+.email{
+    position: relative;
+    width: 40px;
+    left: calc((100% - 40px)/2);
+    margin-top: 10px;
+}
+.email i{
+    font-size: 40px;
+}
+.right{
+    padding: 15px 0;	
+    float: left;
+    width: 55%;
+    height: 95%;
+    background-color: #FFF;
+}
+.cont-cv{
+    position: relative;
+    width: 88%;
+    left: calc((100% - 80%)/4);
+}
+.tits-desc{
+    clear: both;
+    font-size: 17px;
+    margin: 3px;
+}
+.isi{
+    clear: both;
+    text-indent: 0.3in;
+    font-size: 17px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+ul{
+    margin: 0;
+    padding-left: 35px;
+}
+ul li{
+    text-indent: 0;
+}
+.social{
+    position: relative;
+    float: right;
+    right: 20px;
+    margin-bottom: 5px;
+}
+.web{
+    position: relative;
+    float: left;
+    left: 20px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 900px){
+    .container{
+        border: none;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .left{
+        width: 100%;
+        float: none;
+    }
+    .right{
+        width: 100%;
+        float: none;
+    }
+    .profile{
+        width: 200px;
+        height: 200px;
+        left: calc((100% - 200px)/2);
+        top: calc((100% - 200px)/6);
+    }
+    .desc{
+        font-size: 21px;
+        width: 450px;
+        left: calc((100% - 450px)/2);
+        top: calc((100% - 300px)/2)
+    }
+    .sub-desc{
+        font-size: 21px;
+        width: 450px;
+        left: calc((100% - 450px)/2);
+        top: calc((100% - 250px)/2);
+    }
+    .email{
+        top: calc((50% - 40px));
+    }
+}
+@media screen and (max-width: 470px){
+    .container{
+        border: none;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .left{
+        width: 100%;
+        float: none;
+    }
+    .right{
+        width: 100%;
+        float: none;
+    }
+    .profile{
+        width: 200px;
+        height: 200px;
+        left: calc((100% - 200px)/2);
+        top: calc((100% - 200px)/6);
+    }
+    .desc{
+        font-size: 16px;
+        width: 300px;
+        left: calc((100% - 300px)/2);
+        top: calc((100% - 300px)/2)
+    }
+    .sub-desc{
+        font-size: 16px;
+        width: 300px;
+        left: calc((100% - 300px)/2);
+        top: calc((100% - 250px)/2);
+    }
+}
+@media screen and (max-width: 360px){
+    .container{
+        border: none;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .left{
+        width: 100%;
+        float: none;
+    }
+    .right{
+        width: 100%;
+        float: none;
+    }
+    .profile{
+        width: 200px;
+        height: 200px;
+        left: calc((100% - 200px)/2);
+        top: calc((100% - 200px)/6);
+    }
+    .desc{
+        font-size: 15px;
+        width: 280px;
+        left: calc((100% - 280px)/2);
+        top: calc((100% - 300px)/2)
+    }
+    .sub-desc{
+        font-size: 15px;
+        width: 280px;
+        left: calc((100% - 280px)/2);
+        top: calc((100% - 250px)/2);
+    }
+}
